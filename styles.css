@@ -69,8 +69,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
-    min-height: 480px;
-    max-width: 540px;
+
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     padding: 20px;
