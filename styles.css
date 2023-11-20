@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --bodyBgColor: hsl(222, 26%, 31%);
     --headerColor: white;
-    --themesBgColor : hsl(223, 30%, 14%);
+    --themesBgColor: hsl(223, 30%, 14%);
     --displayBgColor: hsl(224, 36%, 15%);
     --displayColor: white;
     --containerBgColor: hsl(223, 31%, 20%);
     --buttonsColor: hsl(221, 14%, 31%);
     --buttonsBgcolor: hsl(30, 25%, 89%);
     --buttonsBoxShadow: 0px 4px hsl(28, 16%, 65%);
-    --buttonsHover :  hsl(0, 0%, 100%);
+    --buttonsHover: hsl(0, 0%, 100%);
     --delColor: white;
     --delBgColor: hsl(225, 21%, 49%);
     --delBoxShadow: 0px 4px hsl(223, 30%, 36%);
@@ -26,7 +26,7 @@
     --equalColor: white;
     --equalBgColor: hsl(6, 63%, 50%);
     --equalBoxShadow: 0px 4px hsl(6, 70%, 34%);
-    --equalHover:  hsl(6, 86%, 58%);
+    --equalHover: hsl(6, 86%, 58%);
     --sliderColor: hsl(6, 90%, 59%);
     --sliderHover: hsl(7, 76%, 79%);
 }
@@ -62,7 +62,7 @@ main {
     color: var(--headerColor);
 }
 
-.header p{
+.header p {
     padding-left: 10px;
 }
 
@@ -83,14 +83,14 @@ main {
     padding-bottom: 20px;
 }
 
-.themeSelected{
+.themeSelected {
     display: flex;
     justify-content: space-around;
     gap: 15px;
     padding-bottom: 5px;
 }
 
-#themes{
+#themes {
     -webkit-appearance: none;
     width: 100%;
     height: 26px;
@@ -103,7 +103,7 @@ main {
     border-radius: 80px;
 }
 
-#themes::-webkit-slider-thumb{
+#themes::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     background: var(--sliderColor);
@@ -113,14 +113,14 @@ main {
     cursor: pointer;
 }
 
-#themes::-webkit-slider-thumb:hover{
+#themes::-webkit-slider-thumb:hover {
     background: var(--sliderHover);
 }
 
 .display {
     display: flex;
     min-height: 130px;
-    max-width: 350px;
+    max-width: 550px;
     font-size: 55px;
     color: var(--displayColor);
     justify-content: end;
@@ -130,8 +130,8 @@ main {
     border-radius: 5px;
 }
 
-.result{
-    
+.result {
+
     word-wrap: break-word;
 }
 
@@ -144,7 +144,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     padding: 20px;
-    background-color:var(--containerBgColor);
+    background-color: var(--containerBgColor);
     border-radius: 5px;
 }
 
@@ -175,15 +175,15 @@ main {
     box-shadow: 0px 10px 0px 0px hsla(29, 16%, 65%, 0);
 }
 
-#del{
-    color: var(--delColor) ;
+#del {
+    color: var(--delColor);
     font-size: 25px;
     background-color: var(--delBgColor);
     box-shadow: var(--delBoxShadow);
 }
 
-#del:hover{
-    background-color: var(--delHover); 
+#del:hover {
+    background-color: var(--delHover);
 }
 
 .reset {
@@ -198,11 +198,11 @@ main {
     box-shadow: var(--resetBoxShadow);
 }
 
-#reset:hover{
-    background-color: var(--resetHover); 
+#reset:hover {
+    background-color: var(--resetHover);
 }
 
-.equal{
+.equal {
     grid-column: 3 / span 2;
 }
 
@@ -214,28 +214,28 @@ main {
     box-shadow: var(--equalBoxShadow);
 }
 
-#equal:hover{
-    background-color: var(--equalHover); 
+#equal:hover {
+    background-color: var(--equalHover);
 }
 
-@media (width <500px){
+@media (width <500px) {
 
-    body{
+    body {
         justify-content: center;
     }
 
-    main{
-    min-width: 360px;
-    margin: 0;
-    padding: 20px;
+    main {
+        min-width: 360px;
+        margin: 0;
+        padding: 20px;
     }
 
-    .container{
+    .container {
         min-height: 420px;
         max-width: 540px;
     }
 
-    .container button{
+    .container button {
         min-height: 60px;
         min-width: 60px;
         border-radius: 5px;
@@ -258,12 +258,5 @@ main {
         font-size: 20px;
         min-width: 128px;
     }
-    
+
 }
-
-
-
-
-
-
-
